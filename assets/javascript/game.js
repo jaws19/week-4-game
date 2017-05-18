@@ -30,7 +30,7 @@ $(document).ready(function() {
     function updateScores() {
         if (yourScore === targetScore) {
             yourWins++;
-            $("#message").html("Tú Ganas!");
+            $("#message").html("Brilliant! You Win!");
             $("#wins").text(yourWins);
             targetScore = Math.floor(Math.random() * (120 - 19 + 1) + 19);
             $("#target").text(targetScore);
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
         } else if (yourScore > targetScore) {
             yourLosses++;
-            $("#message").html("Tú Pierdes!");
+            $("#message").html("Aww... You Lose!");
             $("#losses").html(yourLosses);
             targetScore = Math.floor(Math.random() * (120 - 19 + 1) + 19);
             $("#target").text(targetScore);
