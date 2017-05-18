@@ -1,7 +1,7 @@
 //Runs script after page loads
 $(document).ready(function() {
 
-
+//Game variables
 
     var targetScore = Math.floor(Math.random() * (120 - 19 + 1) + 19);
     var yourScore = 0;
@@ -12,7 +12,7 @@ $(document).ready(function() {
     var crystal3 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
     var crystal4 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
-
+//Function for score variables. Used to reset scores in function updateScores
 
     function scoreVariables() {
         crystal1 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
@@ -21,9 +21,11 @@ $(document).ready(function() {
         crystal4 = Math.floor(Math.random() * (12 - 1 + 1) + 1);
     }
 
+//Sets Target Score    
 
+    $("#target").text(targetScore);    
 
-
+//Function for updating and resetting scores. Also displays win or lose message. 
 
     function updateScores() {
         if (yourScore === targetScore) {
@@ -34,7 +36,11 @@ $(document).ready(function() {
             $("#target").text(targetScore);
             yourScore = 0;
             $("#score").text(yourScore);
+            setTimeout(function() {
+                $('#message').html("");
+            }, 3000);
             scoreVariables();
+
         } else if (yourScore > targetScore) {
             yourLosses++;
             $("#message").html("Tú Pierdes!");
@@ -43,11 +49,15 @@ $(document).ready(function() {
             $("#target").text(targetScore);
             yourScore = 0;
             $("#score").text(yourScore);
+            setTimeout(function() {
+                $('#message').html("");
+            }, 3000);
             scoreVariables();
+
         }
     }
 
-    $("#target").text(targetScore);
+//On click events for crystals to update scores.
 
     $("#pink").on("click", function() {
         yourScore += crystal1;

@@ -14,7 +14,7 @@ p {
   color: #333;
   font-weight: bold;
   font-size: 72px;
-  text-shadow: #e5e5e5 2px 2spx;
+  text-shadow: #e5e5e5 2px 2px;
 }
 
 .h2 {
@@ -64,7 +64,6 @@ body {
     color: white;
 }
 
-
 /* Custom page CSS */
 
 body > .container {
@@ -85,4 +84,4 @@ body > .container {
 }
 
 
-/* Grid Syling */
+
