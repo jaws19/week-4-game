@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-xs-12 text-center">
+                    <h1>CRYSTALS COLLECTOR</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/Diamond-Dark-Pink.jpg" class="img-responsive" alt="Crystal Picture 1" id="pink">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/Diamond-Blue.jpg" class="img-responsive" alt="Crystal Picture 2" id="blue">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/Diamond-Rose.jpg" class="img-responsive" alt="Crystal Picture 3" id="rose">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/images/Diamond-Snot.jpg" class="img-responsive" alt="Crystal Picture 4" id="snot">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <p><b>TARGET SCORE</b></p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <p><b>YOUR SCORE</b></p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <p><b>WINS</b></p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <p><b>LOSSES</b></p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 text-center h1" id="target">
+                    </div>
+                    <div class="col-md-3 text-center h1" id="score">
+                    </div>
+                    <div class="col-md-3 text-center h1" id="wins">
+                    </div>
+                    <div class="col-md-3 text-center h1" id="losses">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 text-center h2" id="message">
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; 2017 Wesley Martin</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <!-- Custom scripts for this template -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

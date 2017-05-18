@@ -1,0 +1,88 @@
+/* Body */
+
+* {
+    border-radius: 0 !important;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.h1 {
+  color: #333;
+  font-weight: bold;
+  font-size: 72px;
+  text-shadow: #e5e5e5 2px 2spx;
+}
+
+.h2 {
+  color: #a7a9ac;
+  font-weight: bold;
+  font-size: 60px;
+  font-style: italic;
+  text-shadow: #333 1px 1px;
+}
+
+.panel-body {
+  background-color: #f9f9f9;
+}
+
+.panel {
+  border-color: #918A82;
+}
+
+/* Header */
+
+.jumbotron {
+    background-color: #918A82;
+    color: white;
+}
+
+
+/* Sticky footer styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #918A82;
+}
+
+.text-muted {
+    color: white;
+}
+
+
+/* Custom page CSS */
+
+body > .container {
+    padding: 40px 0;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+
+/* Grid Syling */
